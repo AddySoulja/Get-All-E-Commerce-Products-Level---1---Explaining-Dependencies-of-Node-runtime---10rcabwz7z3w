@@ -12,7 +12,7 @@ app.use(express.json());
 // Endpoint - /api/v1/products
 const api1 = async (req, res) => {
   try {
-    // const data = await products;
+    const data = await products;
     res.status(200).json({
       status: "success",
       message: "Product fetched successfully",
