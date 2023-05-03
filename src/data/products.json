@@ -10,6 +10,18 @@
       "name": "Rin",
       "price": 2500,
       "quantity": 50
+    },
+    {
+      "id": 3,
+      "name": "Ariel",
+      "price": 3000,
+      "quantity": 50
+    },
+    {
+      "id": 4,
+      "name": "Imapct ",
+      "price": 2800,
+      "quantity": 50
     }
      
   ]
