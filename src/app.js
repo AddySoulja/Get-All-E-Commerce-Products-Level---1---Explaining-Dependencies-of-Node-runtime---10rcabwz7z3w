@@ -10,5 +10,18 @@ app.use(express.json());
 
 // Write GET endpoint for sending all the products to client here
 // Endpoint - /api/v1/products
+const api1 = async (req, res) => {
+  try {
+    // const data = await products;
+    res.status(200).json({
+      status: "success",
+      message: "Product fetched successfully",
+      products: { ...products },
+    });
+  } catch (error) {
+    res.status(404).json({ message: "Product not found", error });
+  }
+};
+app.get("/api/v1/products", api1);
 
 module.exports = app;
