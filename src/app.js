@@ -15,7 +15,7 @@ const api1 = async (req, res) => {
     res.status(200).json({
       status: "success",
       message: "Product fetched successfully",
-      data: { products },
+      data: { products: { ...products } },
     });
   } catch (error) {
     res.status(404).json({ message: "Product not found", error });
